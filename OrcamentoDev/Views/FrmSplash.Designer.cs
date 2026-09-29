@@ -38,9 +38,10 @@
             // lblTituloSplash
             // 
             lblTituloSplash.AutoSize = true;
-            lblTituloSplash.Location = new Point(395, 53);
+            lblTituloSplash.Font = new Font("Segoe UI", 30F);
+            lblTituloSplash.Location = new Point(249, 78);
             lblTituloSplash.Name = "lblTituloSplash";
-            lblTituloSplash.Size = new Size(132, 15);
+            lblTituloSplash.Size = new Size(441, 54);
             lblTituloSplash.TabIndex = 0;
             lblTituloSplash.Text = "Sistema de Orçamentos";
             // 
@@ -49,6 +50,7 @@
             prgCarregando.Location = new Point(12, 245);
             prgCarregando.Name = "prgCarregando";
             prgCarregando.Size = new Size(837, 34);
+            prgCarregando.Style = ProgressBarStyle.Marquee;
             prgCarregando.TabIndex = 1;
             // 
             // timer1
@@ -58,7 +60,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(406, 138);
+            label1.Location = new Point(387, 150);
             label1.Name = "label1";
             label1.Size = new Size(119, 15);
             label1.TabIndex = 2;
@@ -68,10 +70,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DeepSkyBlue;
             ClientSize = new Size(944, 291);
             Controls.Add(label1);
             Controls.Add(prgCarregando);
             Controls.Add(lblTituloSplash);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FrmSplash";
             Text = "Splash";
             ResumeLayout(false);
